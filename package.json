@@ -1,0 +1,38 @@
+{
+  "author": "Talles L <talleslasmar@gmail.com>",
+  "bin": "index.js",
+  "bugs": {
+    "url": "https://github.com/tallesl/deadsimplelog/issues"
+  },
+  "dependencies": {
+    "commonmark": "^0.25.0",
+    "emojis": "^1.0.9",
+    "friendly-url": "^1.0.3",
+    "gather-scatter": "^1.0.1",
+    "lodash": "^4.7.0",
+    "minimisty": "^1.1.1",
+    "moment": "^2.12.0",
+    "mustache": "^2.2.1",
+    "readdirfiles": "^1.2.1",
+    "rfile": "^1.0.0",
+    "rimraf": "^2.5.2",
+    "shift-lines": "^1.0.1",
+    "through2": "^2.0.1",
+    "through2-spy": "^2.0.0"
+  },
+  "description": "Configless static blog generator.",
+  "devDependencies": {
+    "standard": "^6.0.8"
+  },
+  "license": "Fair",
+  "name": "deadsimplelog",
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tallesl/deadsimplelog.git"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "version": "2.0.0"
+}

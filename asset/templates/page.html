@@ -1,0 +1,18 @@
+<!doctype html>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<link rel="icon" href="favicon.ico">
+{{{css}}}
+
+<header>
+  <a href="index.html">{{name}}</a>
+</header>
+
+<main>
+{{{content}}}
+  <nav>
+    {{#older}}<a href="{{older}}" class="older">Older &#8594;</a>{{/older}}<a href="index.html">Home</a>{{#newer}}<a href="{{newer}}" class="newer">&#8592; Newer</a>{{/newer}}
+  </nav>
+</main>

@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html { height: 100%; margin: 0; }
+body { background-color: #fdfdfd; color: #333; font-family: Open Sans, sans-serif; font-size: 1em; height: 100%; margin: 0; padding: 0 }
+
+a               { color: #ee398d; text-decoration: none; }
+a:hover         { text-decoration: underline; }
+blockquote      { background-color: #f0f0f0; border-left: 4px solid #aaa; margin: 20px 40px; padding: 2px 15px; }
+code            { background-color: #f0f0f0; border-radius: 2px; padding: 0 3px; font-family: Consolas, monospace; }
+img:not(.emoji) { display: block; margin-left: auto; margin-right: auto; max-width: 100%; }
+pre             { border-color: #aaa; border-style: solid; border-width: 1px 2px 2px 1px; padding: 10px 15px; margin: 20px 40px; overflow: auto; }
+pre code        { background-color: inherit; border-radius: inherit; padding: 0; }
+small           { font-size: .6em; vertical-align: text-top; }
+
+h1 { font: inherit; font-size: 1.75em; font-weight: bold; margin: 0; padding: 0; }
+h2 { font: inherit; font-size: 1.2em; font-weight: bold; margin: 0; padding: 0; }
+h3 { font: inherit; font-weight: bold; margin: 0; padding: 0; }
+h4 { font: inherit; font-weight: bold; margin: 0; padding: 0; }
+h5 { font: inherit; font-weight: bold; margin: 0; padding: 0; }
+h6 { font: inherit; font-weight: bold; margin: 0; padding: 0; }
+
+article            { line-height: 1.4; border-bottom: solid; border-width: 1px; padding: 0 0 40px 0; text-align: left; }
+article > header   { margin: 50px 15px; padding: 0; text-align: center; }
+article > header a { font-size: 1.75em; }
+body > header      { background-color: rgba(253, 253, 253, 0.95); box-shadow: 0px 2px 8px #ccc; font-family: Grand Hotel, cursive; font-size: 1.75em; padding: 2px 20px; position: fixed; text-align: left; top: 0; width: 100%; }
+body > header a    { color: #333;}
+main               { margin: 90px 20% 20px; padding: 0; }
+nav                { margin: 20px 16px; text-align: center; }
+footer             { bottom: 0; float: right; padding: 0; position: fixed; margin: 1px; right: 0; }
+time               { float: right; font-size: .6em; }
+
+.newer { float: left; }
+.older { float: right; }
+.emoji { margin-bottom: .25em; vertical-align: middle; }
+
+:target          { display: block; position: relative; top: -80px; visibility: hidden; }
+::selection      { background: #ff91af; color: #333; }
+::-moz-selection { background: #ff91af; color: #333; }
+
+@media only screen and (max-device-width: 600px) { main { margin: 100px 2px 20px 2px; } }
