@@ -37,6 +37,22 @@ Then run it on the desired folder:
 $ deadsimplelog
 ```
 
+## Timestamps and git
+
+When using a git repository, you can change the file modification date to the author date of the git commit that created the file with the script(s) below.
+
+Linux:
+
+```sh
+for article in *; do touch -d "$(git log --follow --format=%aD -- "$article" | tail -1)" "$article"; done;
+```
+
+Mac:
+
+```sh
+for article in *; do touch -t "$(date -r "$(git log --follow --format=%at -- "$article" | tail -1)" "+%Y%m%d%H%M.%S")" "$article"; done;
+```
+
 ## Sample output
 
 [My blog].
