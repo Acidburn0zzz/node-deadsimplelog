@@ -8,7 +8,6 @@
     "commonmark": "^0.25.0",
     "friendly-url": "^1.0.3",
     "gather-scatter": "^1.0.1",
-    "lodash": "^4.7.0",
     "minimisty": "^1.1.1",
     "moment": "^2.12.0",
     "mustache": "^2.2.1",
