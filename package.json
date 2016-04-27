@@ -6,7 +6,6 @@
   },
   "dependencies": {
     "commonmark": "^0.25.0",
-    "emojis": "^1.0.9",
     "friendly-url": "^1.0.3",
     "gather-scatter": "^1.0.1",
     "lodash": "^4.7.0",
