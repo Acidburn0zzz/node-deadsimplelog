@@ -1,40 +1,37 @@
 @import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
 
-html { height: 100%; margin: 0; }
-body { background-color: #fdfdfd; color: #333; font-family: Open Sans, sans-serif; font-size: 1em; height: 100%; margin: 0; padding: 0 }
+body            { background-color: #fdfdfd; color: #333; font-family: Quattrocento Sans, sans-serif; font-size: 16px; height: 100%; margin: 0; padding: 0; }
+body > header   { background-color: rgba(253, 253, 253, 0.90); box-shadow: 0px 1px 5px #ccc; font-family: Grand Hotel, cursive; font-size: 28px; padding: 2px 20px; position: fixed; text-align: left; top: 0; width: 100%; }
+body > header a { color: #333;}
 
-a               { color: #ee398d; text-decoration: none; }
-a:hover         { text-decoration: underline; }
-blockquote      { background-color: #f0f0f0; border-left: 4px solid #aaa; margin: 20px 40px; padding: 2px 15px; }
-code            { background-color: #f0f0f0; border-radius: 2px; padding: 0 3px; font-family: Consolas, monospace; }
-img:not(.emoji) { display: block; margin-left: auto; margin-right: auto; max-width: 100%; }
-pre             { border-color: #aaa; border-style: solid; border-width: 1px 2px 2px 1px; padding: 10px 15px; margin: 20px 40px; overflow: auto; }
-pre code        { background-color: inherit; border-radius: inherit; padding: 0; }
-small           { font-size: .6em; vertical-align: text-top; }
+a          { color: #ee398d; text-decoration: none; }
+a:hover    { text-decoration: underline; }
+blockquote { background-color: #f0f0f0; border-left: 4px solid #aaa; margin: 20px 40px; padding: 2px 15px; }
+code       { background-color: #f0f0f0; border-radius: 2px; font-family: Inconsolata, monospace; padding: 0 3px; }
+img        { display: block; margin-left: auto; margin-right: auto; max-width: 100%; }
+pre        { border-color: #aaa; border-style: solid; border-width: 1px 2px 2px 1px; margin: 20px 40px; overflow: auto; padding: 10px 15px; }
+pre code   { background-color: inherit; border-radius: inherit; padding: 0; }
+small      { font-size: 10px; vertical-align: text-top; }
+time       { float: right; font-size: 10px; }
 
-h1 { font: inherit; font-size: 1.75em; font-weight: bold; margin: 0; padding: 0; }
-h2 { font: inherit; font-size: 1.2em; font-weight: bold; margin: 0; padding: 0; }
-h3 { font: inherit; font-weight: bold; margin: 0; padding: 0; }
-h4 { font: inherit; font-weight: bold; margin: 0; padding: 0; }
-h5 { font: inherit; font-weight: bold; margin: 0; padding: 0; }
-h6 { font: inherit; font-weight: bold; margin: 0; padding: 0; }
+h1 { font-size: 28px; font-weight: normal; margin: 0; padding: 0; }
+h2 { font-size: 20px; font-weight: normal; margin: 0; padding: 0; }
+h3 { font-weight: bold; margin: 0; padding: 0; }
+h4 { font-weight: bold; margin: 0; padding: 0; }
+h5 { font-weight: bold; margin: 0; padding: 0; }
+h6 { font-weight: bold; margin: 0; padding: 0; }
 
-article            { line-height: 1.4; border-bottom: solid; border-width: 1px; padding: 0 0 40px 0; text-align: left; }
+article            { line-height: 1.4; padding: 0 0 22px 0; text-align: left; }
 article > header   { margin: 50px 15px; padding: 0; text-align: center; }
-article > header a { font-size: 1.75em; }
-body > header      { background-color: rgba(253, 253, 253, 0.95); box-shadow: 0px 2px 8px #ccc; font-family: Grand Hotel, cursive; font-size: 1.75em; padding: 2px 20px; position: fixed; text-align: left; top: 0; width: 100%; }
-body > header a    { color: #333;}
-main               { margin: 90px 20% 20px; padding: 0; }
-nav                { margin: 20px 16px; text-align: center; }
-footer             { bottom: 0; float: right; padding: 0; position: fixed; margin: 1px; right: 0; }
-time               { float: right; font-size: .6em; }
+article > header a { font-size: 28px; }
 
-.newer { float: left; }
-.older { float: right; }
-.emoji { margin-bottom: .25em; vertical-align: middle; }
+main              { margin: 70px 20% 20px 20%; padding: 0; }
+main > ul li      { font-size: 20px; list-style-type: none; margin: 10px 0; }
+main > ul li time { display: inline-block; float: none; font-size: 10px; margin: 0 10px 0 0; text-align: right; width: 100px; }
 
-:target          { display: block; position: relative; top: -80px; visibility: hidden; }
+:target          { display: block; position: relative; top: -70px; visibility: hidden; }
 ::selection      { background: #ff91af; color: #333; }
 ::-moz-selection { background: #ff91af; color: #333; }
 
