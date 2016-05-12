@@ -3,28 +3,30 @@
 'use strict'
 
 const Gather = require('gather-scatter').Gather
-const Read = require('readdirfiles')
+const List = require('./lib/list')
 const Scatter = require('gather-scatter').Scatter
 
 const any = require('./lib/any')
+const content = require('./lib/content')
 const copy = require('./lib/copy')
 const date = require('./lib/date')
+const dir = require('./lib/dir')
 const filter = require('./lib/filter')
 const home = require('./lib/home')
-const md = require('./lib/md')
-const template = require('./lib/template')
+const path = require('./lib/path')
 const write = require('./lib/write')
 
-new Read.Stream(process.cwd(), 'utf8')
+new List()
   .pipe(filter)
   .pipe(new Gather())
   .pipe(any)
   .pipe(new Scatter())
+  .pipe(path)
   .pipe(date)
-  .pipe(md)
-  .pipe(template)
+  .pipe(content)
   .pipe(new Gather())
-  .pipe(copy)
   .pipe(home)
+  .pipe(dir)
+  .pipe(copy)
   .pipe(new Scatter())
   .pipe(write)
