@@ -18,7 +18,7 @@
   },
   "description": "Configless static blog generator.",
   "devDependencies": {
-    "standard": "^6.0.8"
+    "standard": "^7.0.1"
   },
   "license": "Fair",
   "name": "deadsimplelog",
