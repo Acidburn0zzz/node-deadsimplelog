@@ -52,9 +52,3 @@ Mac:
 ```sh
 for article in *; do touch -t "$(date -r "$(git log --follow --format=%at -- "$article" | tail -1)" "+%Y%m%d%H%M.%S")" "$article"; done;
 ```
-
-## Sample output
-
-[My blog].
-
-[My blog]: http://blog.talles.me
